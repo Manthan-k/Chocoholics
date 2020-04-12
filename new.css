@@ -1,0 +1,386 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+  font-family: "Muli", sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Josefin Sans', sans-serif;
+	
+}
+
+.xyz h1{
+	text-align:center;
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+    font-family: "Josefin Sans",sans-serif;
+	transform: translate(-50%,-50%);
+	color:rgb(255,255,255) !important;
+	font-size:8vw !important;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+/*-------------------------- Navigation Bar ----------------------*/
+.navbar-default {
+	padding: 0 0 0;
+	color:white !important;
+	background-color: rgb(135, 120, 107) !important;
+	border: none !important;
+	border-radius: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+    margin: 0 !important;
+}
+
+.navbar-default .navbar-nav>li .active {
+	color: #d6b161 !important;
+	background:none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    margin: 0;
+    color: #eee !important;
+    padding: 0 !important;
+}
+
+.navbar-default .navbar-nav>li {
+    font-size: 20px;
+    margin: 10px 20px 0;
+    padding: 5 10px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-scroll {
+    background: #fff;
+    border-bottom: 1px solid rgba(12, 12, 12, 0.04);
+    min-height: 60px;
+    line-height: 60px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+
+.nav-scroll .navbar-nav>li>a {
+    color: #111 !important;
+}
+
+.navbar-nav {
+    text-align: center;
+    float: none;
+    margin: auto;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+ul{
+	padding:0 0 0 15px;
+	margin:0 0 0 150px;
+	list-style:none;
+	float:right;
+}
+ul li{
+    padding-left: 20px;
+	display:inline-block;
+}
+
+/*---------------------------------
+            section backgrounds
+-------------------------------------*/
+
+#section1{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/5908/food.png);
+    height: 100vh;
+}
+
+.About h1{
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    font-family:"Muli", sans-serif;
+    color: rgb(99, 55, 24);
+    font-weight: bold;
+    border-bottom: 3px solid #d6b161;
+}
+.About{
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+p{
+    padding-top: 2vh;
+    padding-left: 36vh;
+    padding-right: 36vh;
+    font-family:"Muli",sans-serif;
+    font-weight: 600;
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px;
+    font-size: 200%;
+}
+
+#section3{
+    height: 100vh;
+}
+.Product h1{
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    font-family:"Muli", sans-serif;
+    color: rgb(99, 55, 24);
+    font-weight: bold;
+    border-bottom: 3px solid #d6b161;
+}
+.Product{
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#slider{
+        margin-top: 60px;
+        margin-left: 20%;
+        margin-right: 20%;
+}
+
+#slider .item{
+    height: 500px;
+}
+#slide1{
+    background: url(img/paan1.jpg) center no-repeat; 
+    background-size: contain;
+}
+#slide2{
+    background: url(img/heart1.jpg) center no-repeat; 
+    background-size: contain;
+}
+#slide3{
+    background: url(img/modak1.jpg) center no-repeat;   
+    background-size: contain;
+}
+#slide4{
+    background: url(img/lovebox1.jpg) center no-repeat;   
+    background-size: contain;
+}
+#slide5{
+    background: url(img/candy1.jpg) center no-repeat;   
+    background-size: contain;
+}
+.carousel-caption h2{
+    background-color: antiquewhite;
+    display: inline-block;
+    font-family: "Muli",sans-serif;
+    color: black;
+    background-blend-mode: soft-light;
+}
+
+.Contact h1{
+    text-align: center;
+    padding-top: 0vh;
+    padding-bottom: 2vh;
+    font-family:"Muli", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 3px solid #d6b161;
+}
+
+#section4{
+    background-image: url(img/contactbg2.jpg);
+    background-repeat: no-repeat center;
+    background-size: cover;
+}
+.Contact{
+    display: inline-block;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #522236;
+    padding: 20px 40px;
+    outline: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 0px 4px #f2e933; 
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background:#e64a3c;
+    color:#fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    font-size: 15px;
+    
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.cnt{
+    margin-top: 18vh;
+    padding: 10px 10px 10px 10px;
+    border: 6px solid white;
+}
+
+
+
+/* -------------------------------------------------------
+                    Responsive
+-------------------------------------------------------- */
+
+@media screen and (max-width : 1028px) {
+    p{
+    padding-left: 0;
+    padding-right: 0;
+}
+    .Product h1{
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+}
+
+    #slider{
+        margin-top: 60px;
+        margin-left: 5%;
+        margin-right: 5%;
+}
+    .carousel-caption h2{
+        font-family: "Muli",sans-serif;
+        font-size: 20px;
+    }
+    #slider .item{
+    height: 300px;
+}
+    .xyz h1{
+        	font-size:12vw !important;
+	        -webkit-text-stroke-width: 1px;
+    }
+    .About{ 
+        display: inline-block;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .About h1{
+        padding-top: 6vh;
+        padding-bottom: 2vh;
+        font-size: 20px;
+        border-bottom: 2px solid #d6b161;
+    }
+    p{
+        padding-top: 0vh;
+        font-size: 13px;
+        margin-bottom: 0px !important;
+    }
+    
+     .navbar-default .logo {
+        margin-left: 20px;
+    }
+    .navbar-default .navbar-toggle {
+        background: none !important;
+        margin-top: 15px !important;
+        border: none !important;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background: transparent !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-default .navbar-nav li a {
+        color: #fff !important;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding-bottom: 0 !important;
+    }
+    .navbar-default .navbar-collapse {
+        text-align: center;
+        border: none;
+/*        border-top: 1px solid rgba(12, 12, 12, 0.04);
+        background: #fff;*/
+        text-decoration-color: white;
+        margin-top: 5px;
+    }
+    
+  .Contact h1{
+        font-size: 8vw;
+        color: 	#fff;
+    }
+    .Contact{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .cnt{
+        margin-top: 13vh;
+        padding: 10px 10px 10px 10px;
+        border: 3px solid #fff;
+
+    }
+    .contact-form-text{
+        margin: 20px 0;
+        padding: 10px 20px;
+    }
+    ::placeholder{
+        font-size: 3vw;
+    }
+    .contact-form-btn{
+        padding: 5px 30px;
+
+    }
+}
+
+
+/* -------------------------------------------------------
+                    End
+-------------------------------------------------------- */
